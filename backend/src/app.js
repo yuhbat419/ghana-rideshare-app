@@ -48,7 +48,8 @@ app.use('/api/v1/auth', authRoutes);
 // More routes will be added here as we build:
 const driverRoutes = require('./routes/driver.routes');
 app.use('/api/v1/drivers', driverRoutes);// app.use('/api/v1/customers', customerRoutes);
-// app.use('/api/v1/jobs', jobRoutes);
+const jobRoutes = require('./routes/job.routes');
+app.use('/api/v1/jobs', jobRoutes);
 // app.use('/api/v1/admin', adminRoutes);
 // app.use('/api/v1/payments', paymentRoutes);
 
