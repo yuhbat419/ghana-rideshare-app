@@ -1,0 +1,251 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum Role {
+  CUSTOMER
+  DRIVER
+  ADMIN
+}
+
+enum DriverStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  SUSPENDED
+}
+
+enum VehicleType {
+  SEDAN
+  SUV
+  TRICYCLE
+  MINIVAN
+  PICKUP
+}
+
+enum JobStatus {
+  PENDING
+  ASSIGNED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  MOBILE_MONEY
+  CARD
+  CASH
+}
+
+enum PaymentStatus {
+  PENDING
+  SUCCESS
+  FAILED
+  REFUNDED
+}
+
+enum DocumentType {
+  NATIONAL_ID
+  DRIVERS_LICENSE
+  ROADWORTHY
+  INSURANCE
+  PROFILE_PHOTO
+}
+
+enum DocumentStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum NotificationType {
+  JOB_ASSIGNED
+  JOB_CANCELLED
+  DRIVER_ARRIVED
+  TRIP_STARTED
+  TRIP_COMPLETED
+  PAYMENT_SUCCESS
+  PAYMENT_FAILED
+  DOCUMENT_APPROVED
+  DOCUMENT_REJECTED
+  ACCOUNT_APPROVED
+  ACCOUNT_SUSPENDED
+}
+
+model User {
+  id              String         @id @default(uuid())
+  email           String?        @unique
+  phone           String         @unique
+  password        String
+  firstName       String
+  lastName        String
+  role            Role           @default(CUSTOMER)
+  isVerified      Boolean        @default(false)
+  isActive        Boolean        @default(true)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  driver          Driver?
+  jobsAsCustomer  Job[]          @relation("CustomerJobs")
+  notifications   Notification[]
+  ratingsGiven    Rating[]       @relation("RatingsGiven")
+  ratingsReceived Rating[]       @relation("RatingsReceived")
+  documents       Document[]
+  reviewedDocs    Document[]     @relation("ReviewedDocuments")
+
+  @@map("users")
+}
+
+model Driver {
+  id            String       @id @default(uuid())
+  userId        String       @unique
+  licenseNumber String       @unique
+  status        DriverStatus @default(PENDING)
+  isOnline      Boolean      @default(false)
+  currentLat    Float?
+  currentLng    Float?
+  avgRating     Float        @default(0)
+  totalTrips    Int          @default(0)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  vehicles      Vehicle[]
+  jobs          Job[]        @relation("DriverJobs")
+
+  @@map("drivers")
+}
+
+model Vehicle {
+  id          String      @id @default(uuid())
+  driverId    String
+  make        String
+  model       String
+  year        Int
+  plateNumber String      @unique
+  color       String
+  type        VehicleType
+  isActive    Boolean     @default(true)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  driver      Driver      @relation(fields: [driverId], references: [id], onDelete: Cascade)
+  jobs        Job[]
+
+  @@map("vehicles")
+}
+
+model Job {
+  id             String       @id @default(uuid())
+  customerId     String
+  driverId       String?
+  vehicleId      String?
+  status         JobStatus    @default(PENDING)
+  pickupAddress  String
+  pickupLat      Float
+  pickupLng      Float
+  dropoffAddress String
+  dropoffLat     Float
+  dropoffLng     Float
+  estimatedPrice Decimal      @db.Decimal(10, 2)
+  finalPrice     Decimal?     @db.Decimal(10, 2)
+  distanceKm     Float?
+  notes          String?
+  scheduledAt    DateTime?
+  startedAt      DateTime?
+  completedAt    DateTime?
+  cancelledAt    DateTime?
+  cancelReason   String?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  customer       User         @relation("CustomerJobs", fields: [customerId], references: [id])
+  driver         Driver?      @relation("DriverJobs", fields: [driverId], references: [id])
+  vehicle        Vehicle?     @relation(fields: [vehicleId], references: [id])
+  transaction    Transaction?
+  ratings        Rating[]
+
+  @@map("jobs")
+}
+
+model Transaction {
+  id           String        @id @default(uuid())
+  jobId        String        @unique
+  customerId   String
+  amount       Decimal       @db.Decimal(10, 2)
+  method       PaymentMethod
+  status       PaymentStatus @default(PENDING)
+  paystackRef  String?       @unique
+  platformFee  Decimal       @default(0) @db.Decimal(10, 2)
+  driverPayout Decimal       @default(0) @db.Decimal(10, 2)
+  paidAt       DateTime?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  job          Job           @relation(fields: [jobId], references: [id])
+
+  @@map("transactions")
+}
+
+model Rating {
+  id          String   @id @default(uuid())
+  jobId       String
+  ratedById   String
+  ratedUserId String
+  score       Int
+  comment     String?
+  createdAt   DateTime @default(now())
+  job         Job      @relation(fields: [jobId], references: [id])
+  ratedBy     User     @relation("RatingsGiven", fields: [ratedById], references: [id])
+  ratedUser   User     @relation("RatingsReceived", fields: [ratedUserId], references: [id])
+
+  @@unique([jobId, ratedById])
+  @@map("ratings")
+}
+
+model Document {
+  id           String         @id @default(uuid())
+  userId       String
+  type         DocumentType
+  fileUrl      String
+  status       DocumentStatus @default(PENDING)
+  reviewedById String?
+  reviewNotes  String?
+  expiresAt    DateTime?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  user         User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reviewedBy   User?          @relation("ReviewedDocuments", fields: [reviewedById], references: [id])
+
+  @@map("documents")
+}
+
+model Notification {
+  id        String           @id @default(uuid())
+  userId    String
+  type      NotificationType
+  title     String
+  message   String
+  isRead    Boolean          @default(false)
+  metadata  Json?
+  createdAt DateTime         @default(now())
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("notifications")
+}
+
+model Report {
+  id           String    @id @default(uuid())
+  reportedBy   String
+  reportedUser String
+  jobId        String?
+  reason       String
+  description  String?
+  status       String    @default("PENDING")
+  resolvedAt   DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@map("reports")
+}

@@ -1,0 +1,6 @@
+2026-05-30 09:40:49 [INFO]: Database connected successfully
+2026-05-30 09:40:49 [INFO]: Server running on port 5000 in development mode
+2026-05-30 09:40:49 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 09:41:04 [INFO]: ::1 - - [30/May/2026:13:41:04 +0000] "GET /health HTTP/1.1" 200 126 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"
+2026-05-30 09:41:07 [INFO]: ::1 - - [30/May/2026:13:41:07 +0000] "GET /favicon.ico HTTP/1.1" 404 83 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"
+2026-05-30 09:41:23 [INFO]: ::1 - - [30/May/2026:13:41:23 +0000] "GET /health HTTP/1.1" 200 126 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"
