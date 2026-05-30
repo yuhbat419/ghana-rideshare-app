@@ -40,3 +40,33 @@
 2026-05-30 09:55:48 [INFO]: Database connected successfully
 2026-05-30 09:55:48 [INFO]: Server running on port 5000 in development mode
 2026-05-30 09:55:48 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:02:15 [INFO]: Database connected successfully
+2026-05-30 10:02:15 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:02:15 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:07:33 [INFO]: OTP for 0241234567: 352307 (expires: Sat May 30 2026 10:17:32 GMT-0400 (Eastern Daylight Time))
+2026-05-30 10:07:33 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:07:33 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 313 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:08:33 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:08:33 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 451 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:11:04 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:11:04 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:12:42 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:12:42 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:12:43 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:12:43 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:12:44 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:12:44 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:13:27 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:13:27 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 451 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:14:53 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:14:14:53 +0000] "GET /api/v1/auth/me HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 10:21:59 [INFO]: Database connected successfully
+2026-05-30 10:21:59 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:21:59 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:22:13 [INFO]: Database connected successfully
+2026-05-30 10:22:13 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:22:13 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:23:09 [INFO]: Database connected successfully
+2026-05-30 10:23:09 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:23:09 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:23:26 [INFO]: Database connected successfully
+2026-05-30 10:23:26 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:23:26 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:24:04 [INFO]: Database connected successfully
+2026-05-30 10:24:04 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:24:04 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 10:24:15 [INFO]: Database connected successfully
+2026-05-30 10:24:15 [INFO]: Server running on port 5000 in development mode
+2026-05-30 10:24:15 [INFO]: Health check: http://localhost:5000/health
