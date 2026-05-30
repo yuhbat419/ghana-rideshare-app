@@ -2,10 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const cookieParser = require('cookie-parser');
 require('dotenv/config');
 
 const { errorResponse } = require('./utils/apiResponse');
 const logger = require('./utils/logger');
+
+// Routes
+const authRoutes = require('./routes/auth.routes');
 
 const app = express();
 
@@ -19,6 +23,9 @@ app.use(cors({
 // Body parsing
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
+
+// Cookie parsing
+app.use(cookieParser());
 
 // HTTP request logging
 app.use(morgan('combined', {
@@ -35,10 +42,15 @@ app.get('/health', (req, res) => {
   });
 });
 
-// Routes will be added here soon
-// app.use('/api/v1/auth', authRoutes);
+// API Routes
+app.use('/api/v1/auth', authRoutes);
+
+// More routes will be added here as we build:
 // app.use('/api/v1/drivers', driverRoutes);
+// app.use('/api/v1/customers', customerRoutes);
 // app.use('/api/v1/jobs', jobRoutes);
+// app.use('/api/v1/admin', adminRoutes);
+// app.use('/api/v1/payments', paymentRoutes);
 
 // Handle unknown routes
 app.use('*splat', (req, res) => {
