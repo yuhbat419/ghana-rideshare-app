@@ -50,7 +50,8 @@ const driverRoutes = require('./routes/driver.routes');
 app.use('/api/v1/drivers', driverRoutes);// app.use('/api/v1/customers', customerRoutes);
 const jobRoutes = require('./routes/job.routes');
 app.use('/api/v1/jobs', jobRoutes);
-// app.use('/api/v1/admin', adminRoutes);
+const adminRoutes = require('./routes/admin.routes');
+app.use('/api/v1/admin', adminRoutes);
 // app.use('/api/v1/payments', paymentRoutes);
 
 // Handle unknown routes

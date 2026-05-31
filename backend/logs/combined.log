@@ -126,3 +126,131 @@
 2026-05-30 11:19:39 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:19:39 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 66 "-" "Thunder Client (https://www.thunderclient.com)"
 2026-05-30 11:19:42 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:19:42 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 66 "-" "Thunder Client (https://www.thunderclient.com)"
 2026-05-30 11:20:37 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:20:37 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 66 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:27:51 [INFO]: Database connected successfully
+2026-05-30 11:27:51 [INFO]: Server running on port 5000 in development mode
+2026-05-30 11:27:51 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 11:37:31 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:37:31 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 445 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:40:15 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:40:15 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 70 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:41:40 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:41:40 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 445 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:42:06 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:42:06 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 70 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:43:45 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:43:45 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 445 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:43:57 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:43:57 +0000] "GET /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 70 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:44:00 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:44:00 +0000] "GET /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 70 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:44:51 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:44:51 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 445 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:45:50 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:45:50 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:46:01 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:46:01 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:46:12 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:46:12 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 401 69 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:46:35 [INFO]: Job dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5 accepted by driver 29a966c8-2298-488b-9e5b-52b2dbd63503
+2026-05-30 11:46:35 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:46:35 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 200 1113 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:46:56 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:46:56 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/complete HTTP/1.1" 400 77 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:47:28 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:47:28 +0000] "POST /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/rate HTTP/1.1" 400 192 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:48:01 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:48:01 +0000] "POST /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/rate HTTP/1.1" 400 90 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:48:44 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:48:44 +0000] "POST /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 404 127 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:48:57 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:48:57 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 400 88 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:49:11 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:49:11 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 400 88 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:49:53 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:49:53 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 445 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:50:35 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:50:35 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/accept HTTP/1.1" 400 88 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:50:58 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:50:58 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/start HTTP/1.1" 200 747 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:51:23 [INFO]: Job dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5 completed by driver 29a966c8-2298-488b-9e5b-52b2dbd63503
+2026-05-30 11:51:23 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:51:23 +0000] "PUT /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/complete HTTP/1.1" 200 785 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:51:49 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:15:51:49 +0000] "POST /api/v1/jobs/dfd8cfb4-64ac-41d6-82a2-7ab3f392e0e5/rate HTTP/1.1" 201 360 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 11:52:59 [INFO]: ::1 - - [30/May/2026:15:52:59 +0000] "GET /api/v1/auth/login HTTP/1.1" 404 89 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-05-30 11:52:59 [INFO]: ::1 - - [30/May/2026:15:52:59 +0000] "GET /favicon.ico HTTP/1.1" 404 83 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-05-30 11:53:05 [INFO]: ::1 - - [30/May/2026:15:53:05 +0000] "GET / HTTP/1.1" 404 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-05-30 12:59:09 [INFO]: Database connected successfully
+2026-05-30 12:59:09 [INFO]: Server running on port 5000 in development mode
+2026-05-30 12:59:09 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 13:01:47 [INFO]: Database connected successfully
+2026-05-30 13:01:47 [INFO]: Server running on port 5000 in development mode
+2026-05-30 13:01:47 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 13:02:11 [INFO]: Database connected successfully
+2026-05-30 13:02:11 [INFO]: Server running on port 5000 in development mode
+2026-05-30 13:02:11 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 13:03:11 [INFO]: Database connected successfully
+2026-05-30 13:03:11 [INFO]: Server running on port 5000 in development mode
+2026-05-30 13:03:11 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 13:03:46 [INFO]: Database connected successfully
+2026-05-30 13:03:46 [INFO]: Server running on port 5000 in development mode
+2026-05-30 13:03:46 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 13:04:41 [INFO]: Database connected successfully
+2026-05-30 13:04:41 [INFO]: Server running on port 5000 in development mode
+2026-05-30 13:04:41 [INFO]: Health check: http://localhost:5000/health
+2026-05-30 13:10:17 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:17:10:17 +0000] "GET /api/v1/admin/stats HTTP/1.1" 403 98 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 13:12:27 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:17:12:27 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 17:05:07 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:106:36
+
+  103 const { phone, password } = req.body;
+  104 
+  105 // Find user
+→ 106 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:106:36
+
+  103 const { phone, password } = req.body;
+  104 
+  105 // Find user
+→ 106 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async login (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:106:18)
+2026-05-30 17:05:07 [INFO]: ::ffff:127.0.0.1 - - [30/May/2026:21:05:07 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 513 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-30 17:07:51 [INFO]: Server shut down gracefully
+2026-05-30 17:08:06 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-30 17:21:56 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-30 17:23:13 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:5432`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:5432`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:5432`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:5432`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-31 04:47:42 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-31 04:49:26 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-31 04:50:29 [INFO]: Server running on port 5000 in development mode
+2026-05-31 04:50:29 [INFO]: Health check: http://localhost:5000/health
+2026-05-31 04:50:31 [INFO]: Database connected successfully
+2026-05-31 04:53:26 [INFO]: ::ffff:127.0.0.1 - - [31/May/2026:08:53:26 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-31 04:54:11 [INFO]: ::ffff:127.0.0.1 - - [31/May/2026:08:54:11 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-05-31 04:55:41 [INFO]: Server running on port 5000 in development mode
+2026-05-31 04:55:41 [INFO]: Health check: http://localhost:5000/health
+2026-05-31 04:55:42 [INFO]: Database connected successfully

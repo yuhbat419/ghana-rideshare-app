@@ -1,0 +1,67 @@
+2026-05-30 17:05:07 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:106:36
+
+  103 const { phone, password } = req.body;
+  104 
+  105 // Find user
+→ 106 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:106:36
+
+  103 const { phone, password } = req.body;
+  104 
+  105 // Find user
+→ 106 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async login (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:106:18)
+2026-05-30 17:08:06 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-30 17:21:56 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-30 17:23:13 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:5432`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:5432`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:5432`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:5432`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-31 04:47:42 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
+2026-05-31 04:49:26 [ERROR]: Failed to start server: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientInitializationError: Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at t (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\server.js:11:5)
