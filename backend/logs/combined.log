@@ -262,3 +262,15 @@ Please make sure your database server is running at `aws-0-eu-west-1.pooler.supa
 2026-05-31 05:00:32 [INFO]: ::ffff:127.0.0.1 - - [31/May/2026:09:00:32 +0000] "GET /api/v1/admin/drivers HTTP/1.1" 200 906 "-" "Thunder Client (https://www.thunderclient.com)"
 2026-05-31 05:01:09 [INFO]: ::ffff:127.0.0.1 - - [31/May/2026:09:01:09 +0000] "GET /api/v1/admin/jobs HTTP/1.1" 200 1674 "-" "Thunder Client (https://www.thunderclient.com)"
 2026-05-31 05:01:39 [INFO]: ::ffff:127.0.0.1 - - [31/May/2026:09:01:39 +0000] "GET /api/v1/admin/users HTTP/1.1" 200 735 "-" "Thunder Client (https://www.thunderclient.com)"
+2026-06-01 05:16:50 [INFO]: Server running on port 5000 in development mode
+2026-06-01 05:16:50 [INFO]: Health check: http://localhost:5000/health
+2026-06-01 05:16:53 [INFO]: Database connected successfully
+2026-06-01 05:19:11 [INFO]: OTP for 0593557523: 283039 (expires: Mon Jun 01 2026 05:29:10 GMT-0400 (Eastern Daylight Time))
+2026-06-01 05:19:11 [INFO]: ::1 - - [01/Jun/2026:09:19:11 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 335 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:19:32 [INFO]: ::1 - - [01/Jun/2026:09:19:32 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 473 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:19:38 [INFO]: ::1 - - [01/Jun/2026:09:19:38 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:24:34 [INFO]: New job created: 35be87ea-dd83-43e3-9976-36ffa42cbe9f by customer 1af268fe-b0c6-4688-90ad-fe3877320024
+2026-06-01 05:24:34 [INFO]: ::1 - - [01/Jun/2026:09:24:34 +0000] "POST /api/v1/jobs HTTP/1.1" 201 744 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:24:50 [INFO]: ::1 - - [01/Jun/2026:09:24:50 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:24:57 [INFO]: ::1 - - [01/Jun/2026:09:24:57 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 473 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:25:02 [INFO]: ::1 - - [01/Jun/2026:09:25:02 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 713 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
