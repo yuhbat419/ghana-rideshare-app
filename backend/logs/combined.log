@@ -274,3 +274,6 @@ Please make sure your database server is running at `aws-0-eu-west-1.pooler.supa
 2026-06-01 05:24:50 [INFO]: ::1 - - [01/Jun/2026:09:24:50 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
 2026-06-01 05:24:57 [INFO]: ::1 - - [01/Jun/2026:09:24:57 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 473 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
 2026-06-01 05:25:02 [INFO]: ::1 - - [01/Jun/2026:09:25:02 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 713 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:33:56 [INFO]: Server running on port 5000 in development mode
+2026-06-01 05:33:56 [INFO]: Health check: http://localhost:5000/health
+2026-06-01 05:33:58 [INFO]: Database connected successfully
