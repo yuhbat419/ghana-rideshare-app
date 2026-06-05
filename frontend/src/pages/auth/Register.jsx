@@ -27,8 +27,8 @@ const Register = () => {
     setLoading(true);
     try {
       await authAPI.register(form);
-      toast.success('Account created! Please login.');
-      navigate('/login');
+      toast.success('Account created! Check your phone for OTP.');
+      navigate('/verify-phone', { state: { phone: form.phone } });
     } catch (error) {
       toast.error(error.response?.data?.message || 'Registration failed');
     } finally {
@@ -52,7 +52,6 @@ const Register = () => {
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Create account</h1>
           <p className="text-gray-600 mb-6">Join RideGhana today</p>
 
-          {/* Role Toggle */}
           <div className="flex bg-gray-100 rounded-lg p-1 mb-6">
             <button
               type="button"

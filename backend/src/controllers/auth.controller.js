@@ -4,7 +4,6 @@ const prisma = require('../config/database');
 const { successResponse, errorResponse } = require('../utils/apiResponse');
 const logger = require('../utils/logger');
 
-// Generate tokens
 const generateTokens = (userId, role) => {
   const accessToken = jwt.sign(
     { userId, role },
@@ -19,23 +18,19 @@ const generateTokens = (userId, role) => {
   return { accessToken, refreshToken };
 };
 
-// Generate 6-digit OTP
 const generateOtp = () => {
   return Math.floor(100000 + Math.random() * 900000).toString();
 };
 
-// @route   POST /api/v1/auth/register
 const register = async (req, res, next) => {
   try {
     const { firstName, lastName, phone, email, password, role = 'CUSTOMER' } = req.body;
 
-    // Check if phone already exists
     const existingUser = await prisma.user.findUnique({ where: { phone } });
     if (existingUser) {
       return errorResponse(res, 'Phone number already registered', 409, null, 'PHONE_EXISTS');
     }
 
-    // Check if email already exists
     if (email) {
       const existingEmail = await prisma.user.findUnique({ where: { email } });
       if (existingEmail) {
@@ -43,14 +38,10 @@ const register = async (req, res, next) => {
       }
     }
 
-    // Hash password
     const hashedPassword = await bcrypt.hash(password, 12);
-
-    // Generate OTP for phone verification
     const otp = generateOtp();
-    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
+    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000);
 
-    // Create user
     const user = await prisma.user.create({
       data: {
         firstName,
@@ -72,7 +63,6 @@ const register = async (req, res, next) => {
       },
     });
 
-    // If driver, create driver profile
     if (role === 'DRIVER') {
       await prisma.driver.create({
         data: {
@@ -82,14 +72,21 @@ const register = async (req, res, next) => {
       });
     }
 
-    // TODO: Send OTP via Africa's Talking SMS
-    // For now, log it (remove in production)
-    logger.info(`OTP for ${phone}: ${otp} (expires: ${otpExpiry})`);
+    // Save OTP to database
+    await prisma.otp.create({
+      data: {
+        phone,
+        otp,
+        expiresAt: otpExpiry,
+      },
+    });
+
+    logger.info(`OTP for ${phone}: ${otp}`);
 
     return successResponse(
       res,
       'Registration successful. Please verify your phone number.',
-      { user, otp }, // Remove otp from response in production
+      { user },
       201
     );
   } catch (error) {
@@ -97,37 +94,31 @@ const register = async (req, res, next) => {
   }
 };
 
-// @route   POST /api/v1/auth/login
 const login = async (req, res, next) => {
   try {
     const { phone, password } = req.body;
 
-    // Find user
     const user = await prisma.user.findUnique({ where: { phone } });
     if (!user) {
       return errorResponse(res, 'Invalid phone number or password', 401, null, 'INVALID_CREDENTIALS');
     }
 
-    // Check if account is active
     if (!user.isActive) {
       return errorResponse(res, 'Your account has been suspended', 403, null, 'ACCOUNT_SUSPENDED');
     }
 
-    // Check password
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
       return errorResponse(res, 'Invalid phone number or password', 401, null, 'INVALID_CREDENTIALS');
     }
 
-    // Generate tokens
     const { accessToken, refreshToken } = generateTokens(user.id, user.role);
 
-    // Set refresh token as httpOnly cookie
     res.cookie('refreshToken', refreshToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
-      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
     return successResponse(res, 'Login successful', {
@@ -147,16 +138,28 @@ const login = async (req, res, next) => {
   }
 };
 
-// @route   POST /api/v1/auth/verify-phone
 const verifyPhone = async (req, res, next) => {
   try {
     const { phone, otp } = req.body;
 
-    // TODO: Verify OTP from database/cache
-    // For now, accept "123456" as test OTP
-    if (otp !== '123456') {
+    const otpRecord = await prisma.otp.findFirst({
+      where: {
+        phone,
+        otp,
+        used: false,
+        expiresAt: { gt: new Date() },
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    if (!otpRecord) {
       return errorResponse(res, 'Invalid or expired OTP', 400, null, 'INVALID_OTP');
     }
+
+    await prisma.otp.update({
+      where: { id: otpRecord.id },
+      data: { used: true },
+    });
 
     await prisma.user.update({
       where: { phone },
@@ -169,7 +172,6 @@ const verifyPhone = async (req, res, next) => {
   }
 };
 
-// @route   POST /api/v1/auth/refresh-token
 const refreshToken = async (req, res, next) => {
   try {
     const token = req.cookies?.refreshToken;
@@ -199,7 +201,6 @@ const refreshToken = async (req, res, next) => {
   }
 };
 
-// @route   GET /api/v1/auth/me
 const getMe = async (req, res, next) => {
   try {
     const user = await prisma.user.findUnique({
@@ -231,7 +232,6 @@ const getMe = async (req, res, next) => {
   }
 };
 
-// @route   POST /api/v1/auth/logout
 const logout = (req, res) => {
   res.clearCookie('refreshToken');
   return successResponse(res, 'Logged out successfully');

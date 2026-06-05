@@ -277,3 +277,178 @@ Please make sure your database server is running at `aws-0-eu-west-1.pooler.supa
 2026-06-01 05:33:56 [INFO]: Server running on port 5000 in development mode
 2026-06-01 05:33:56 [INFO]: Health check: http://localhost:5000/health
 2026-06-01 05:33:58 [INFO]: Database connected successfully
+2026-06-01 05:39:22 [INFO]: ::1 - - [01/Jun/2026:09:39:22 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:39:22 [INFO]: ::1 - - [01/Jun/2026:09:39:22 +0000] "GET /api/v1/jobs?limit=50 HTTP/1.1" 200 714 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:40:24 [INFO]: ::1 - - [01/Jun/2026:09:40:24 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 473 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:48:12 [INFO]: ::1 - - [01/Jun/2026:09:48:12 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 05:48:12 [INFO]: ::1 - - [01/Jun/2026:09:48:12 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 07:09:24 [INFO]: Server running on port 5000 in development mode
+2026-06-01 07:09:24 [INFO]: Health check: http://localhost:5000/health
+2026-06-01 07:09:26 [INFO]: Database connected successfully
+2026-06-01 07:11:16 [INFO]: ::1 - - [01/Jun/2026:11:11:16 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 473 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 07:11:21 [INFO]: ::1 - - [01/Jun/2026:11:11:21 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 07:49:20 [INFO]: ::1 - - [01/Jun/2026:11:49:20 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 07:49:27 [INFO]: ::1 - - [01/Jun/2026:11:49:27 +0000] "GET /api/v1/jobs?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-01 08:19:57 [INFO]: Server running on port 5000 in development mode
+2026-06-01 08:19:57 [INFO]: Health check: http://localhost:5000/health
+2026-06-01 08:19:58 [INFO]: Database connected successfully
+2026-06-03 01:10:01 [INFO]: Server running on port 5000 in development mode
+2026-06-03 01:10:01 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 01:10:03 [INFO]: Database connected successfully
+2026-06-03 01:13:01 [INFO]: Server running on port 5000 in development mode
+2026-06-03 01:13:02 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 01:13:03 [INFO]: Server running on port 5000 in development mode
+2026-06-03 01:13:03 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 01:13:03 [INFO]: Database connected successfully
+2026-06-03 01:13:05 [INFO]: Database connected successfully
+2026-06-03 01:14:50 [INFO]: Server running on port 5000 in development mode
+2026-06-03 01:14:50 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 01:14:52 [INFO]: Database connected successfully
+2026-06-03 01:34:40 [INFO]: Server running on port 5000 in development mode
+2026-06-03 01:34:40 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 01:34:42 [INFO]: Database connected successfully
+2026-06-03 01:34:48 [INFO]: Server running on port 5000 in development mode
+2026-06-03 01:34:48 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 01:34:50 [INFO]: Database connected successfully
+2026-06-03 02:05:04 [INFO]: ::1 - - [03/Jun/2026:06:05:04 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 142 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:05:33 [INFO]: ::1 - - [03/Jun/2026:06:05:33 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 76 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:05:48 [INFO]: OTP for 0261111111: 810976 (expires: Wed Jun 03 2026 02:15:47 GMT-0400 (Eastern Daylight Time))
+2026-06-03 02:05:48 [INFO]: ::1 - - [03/Jun/2026:06:05:48 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 330 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:05:58 [INFO]: ::1 - - [03/Jun/2026:06:05:58 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:05:59 [INFO]: ::1 - - [03/Jun/2026:06:05:59 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 200 286 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:06:00 [INFO]: ::1 - - [03/Jun/2026:06:06:00 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:06:42 [INFO]: ::1 - - [03/Jun/2026:06:06:42 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 468 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:06:48 [INFO]: ::1 - - [03/Jun/2026:06:06:48 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:13:57 [INFO]: ::1 - - [03/Jun/2026:06:13:57 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:17:41 [INFO]: Server running on port 5000 in development mode
+2026-06-03 02:17:41 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 02:17:49 [INFO]: Server running on port 5000 in development mode
+2026-06-03 02:17:49 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 02:17:51 [INFO]: Database connected successfully
+2026-06-03 02:26:11 [INFO]: ::1 - - [03/Jun/2026:06:26:11 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 142 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:27:13 [INFO]: OTP for 0281111111: 255102 (expires: Wed Jun 03 2026 02:37:12 GMT-0400 (Eastern Daylight Time))
+2026-06-03 02:27:13 [INFO]: ::1 - - [03/Jun/2026:06:27:13 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 334 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:30:01 [INFO]: ::1 - - [03/Jun/2026:06:30:01 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 400 73 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:30:45 [INFO]: ::1 - - [03/Jun/2026:06:30:45 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:46:49 [INFO]: Server running on port 5000 in development mode
+2026-06-03 02:46:49 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 02:49:33 [INFO]: Server running on port 5000 in development mode
+2026-06-03 02:49:33 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 02:49:37 [INFO]: Database connected successfully
+2026-06-03 02:51:20 [INFO]: ::1 - - [03/Jun/2026:06:51:20 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 76 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:52:50 [INFO]: OTP for 0291111111: 324973 (expires: Wed Jun 03 2026 03:02:49 GMT-0400 (Eastern Daylight Time))
+2026-06-03 02:52:50 [INFO]: ::1 - - [03/Jun/2026:06:52:50 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 335 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:53:38 [INFO]: ::1 - - [03/Jun/2026:06:53:38 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 400 73 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:53:42 [INFO]: ::1 - - [03/Jun/2026:06:53:42 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 400 73 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:53:49 [INFO]: ::1 - - [03/Jun/2026:06:53:49 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 400 73 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:55:01 [INFO]: ::1 - - [03/Jun/2026:06:55:01 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 400 73 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 02:55:04 [INFO]: ::1 - - [03/Jun/2026:06:55:04 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 400 73 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:01:24 [INFO]: Server running on port 5000 in development mode
+2026-06-03 03:01:24 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 03:01:27 [INFO]: Database connected successfully
+2026-06-03 03:02:19 [INFO]: Server running on port 5000 in development mode
+2026-06-03 03:02:19 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 03:02:20 [INFO]: Database connected successfully
+2026-06-03 03:03:22 [INFO]: ::1 - - [03/Jun/2026:07:03:22 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 76 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:03:28 [INFO]: ::1 - - [03/Jun/2026:07:03:28 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 142 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:03:54 [ERROR]: Cannot read properties of undefined (reading 'create')
+TypeError: Cannot read properties of undefined (reading 'create')
+    at register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:76:22)
+2026-06-03 03:03:54 [INFO]: ::1 - - [03/Jun/2026:07:03:54 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:04:02 [INFO]: ::1 - - [03/Jun/2026:07:04:02 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:04:20 [INFO]: ::1 - - [03/Jun/2026:07:04:20 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:04:47 [INFO]: ::1 - - [03/Jun/2026:07:04:47 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 465 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:04:52 [INFO]: ::1 - - [03/Jun/2026:07:04:52 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 03:06:29 [INFO]: ::1 - - [03/Jun/2026:07:06:29 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 04:39:55 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:29:44
+
+  26 try {
+  27   const { firstName, lastName, phone, email, password, role = 'CUSTOMER' } = req.body;
+  28 
+→ 29   const existingUser = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:29:44
+
+  26 try {
+  27   const { firstName, lastName, phone, email, password, role = 'CUSTOMER' } = req.body;
+  28 
+→ 29   const existingUser = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:29:26)
+2026-06-03 04:39:55 [INFO]: ::1 - - [03/Jun/2026:08:39:55 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 560 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 04:40:18 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:29:44
+
+  26 try {
+  27   const { firstName, lastName, phone, email, password, role = 'CUSTOMER' } = req.body;
+  28 
+→ 29   const existingUser = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:29:44
+
+  26 try {
+  27   const { firstName, lastName, phone, email, password, role = 'CUSTOMER' } = req.body;
+  28 
+→ 29   const existingUser = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:29:26)
+2026-06-03 04:40:18 [INFO]: ::1 - - [03/Jun/2026:08:40:18 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 560 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 05:55:00 [INFO]: Server running on port 5000 in development mode
+2026-06-03 05:55:00 [INFO]: Health check: http://localhost:5000/health
+2026-06-03 05:55:02 [INFO]: Database connected successfully
+2026-06-03 05:56:41 [ERROR]: Cannot read properties of undefined (reading 'create')
+TypeError: Cannot read properties of undefined (reading 'create')
+    at register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:76:22)
+2026-06-03 05:56:41 [INFO]: ::1 - - [03/Jun/2026:09:56:41 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 05:56:47 [INFO]: ::1 - - [03/Jun/2026:09:56:47 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 05:56:56 [INFO]: ::1 - - [03/Jun/2026:09:56:56 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 05:57:14 [INFO]: ::1 - - [03/Jun/2026:09:57:14 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 474 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 05:57:18 [INFO]: ::1 - - [03/Jun/2026:09:57:18 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-03 06:01:30 [INFO]: Server running on port 5000 in development mode
+2026-06-03 06:01:30 [INFO]: Health check: http://localhost:5000/health
+2026-06-05 01:22:15 [INFO]: Server running on port 5000 in development mode
+2026-06-05 01:22:15 [INFO]: Health check: http://localhost:5000/health
+2026-06-05 01:22:17 [INFO]: Database connected successfully
+2026-06-05 01:23:29 [INFO]: ::1 - - [05/Jun/2026:05:23:29 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 401 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:23:30 [INFO]: ::1 - - [05/Jun/2026:05:23:30 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 200 286 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:23:33 [INFO]: ::1 - - [05/Jun/2026:05:23:33 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:23:39 [INFO]: ::1 - - [05/Jun/2026:05:23:39 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:26:55 [INFO]: ::1 - - [05/Jun/2026:05:26:55 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 474 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:30:00 [INFO]: ::1 - - [05/Jun/2026:05:30:00 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:30:03 [INFO]: ::1 - - [05/Jun/2026:05:30:03 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:30:36 [ERROR]: Cannot read properties of undefined (reading 'create')
+TypeError: Cannot read properties of undefined (reading 'create')
+    at register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:76:22)
+2026-06-05 01:30:36 [INFO]: ::1 - - [05/Jun/2026:05:30:36 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:35:03 [INFO]: Server running on port 5000 in development mode
+2026-06-05 01:35:03 [INFO]: Health check: http://localhost:5000/health
+2026-06-05 01:35:05 [INFO]: Database connected successfully
+2026-06-05 01:35:32 [INFO]: ::1 - - [05/Jun/2026:05:35:32 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:35:44 [INFO]: ::1 - - [05/Jun/2026:05:35:44 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 76 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:35:54 [ERROR]: Cannot read properties of undefined (reading 'create')
+TypeError: Cannot read properties of undefined (reading 'create')
+    at register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:76:22)
+2026-06-05 01:35:54 [INFO]: ::1 - - [05/Jun/2026:05:35:54 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"

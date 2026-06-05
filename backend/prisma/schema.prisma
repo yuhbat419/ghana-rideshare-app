@@ -249,3 +249,13 @@ model Report {
 
   @@map("reports")
 }
+model Otp {
+  id        String   @id @default(uuid())
+  phone     String
+  otp       String
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("otps")
+}
