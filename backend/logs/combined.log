@@ -452,3 +452,1071 @@ TypeError: Cannot read properties of undefined (reading 'create')
 TypeError: Cannot read properties of undefined (reading 'create')
     at register (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:76:22)
 2026-06-05 01:35:54 [INFO]: ::1 - - [05/Jun/2026:05:35:54 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:43:18 [INFO]: Server running on port 5000 in development mode
+2026-06-05 01:43:18 [INFO]: Health check: http://localhost:5000/health
+2026-06-05 01:43:20 [INFO]: Database connected successfully
+2026-06-05 01:45:47 [INFO]: ::1 - - [05/Jun/2026:05:45:47 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:47:23 [INFO]: OTP for 0544444444: 948090
+2026-06-05 01:47:24 [INFO]: ::1 - - [05/Jun/2026:05:47:24 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 318 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:06 [INFO]: ::1 - - [05/Jun/2026:05:48:06 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 200 63 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:18 [INFO]: ::1 - - [05/Jun/2026:05:48:18 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:18 [INFO]: ::1 - - [05/Jun/2026:05:48:18 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:26 [INFO]: ::1 - - [05/Jun/2026:05:48:26 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:26 [INFO]: ::1 - - [05/Jun/2026:05:48:26 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:41 [INFO]: ::1 - - [05/Jun/2026:05:48:41 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:42 [INFO]: ::1 - - [05/Jun/2026:05:48:42 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:44 [INFO]: ::1 - - [05/Jun/2026:05:48:44 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:44 [INFO]: ::1 - - [05/Jun/2026:05:48:44 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:47 [INFO]: ::1 - - [05/Jun/2026:05:48:47 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:48:47 [INFO]: ::1 - - [05/Jun/2026:05:48:47 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:51:19 [INFO]: OTP for 0577777779: 273120
+2026-06-05 01:51:19 [INFO]: ::1 - - [05/Jun/2026:05:51:19 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 318 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:52:27 [INFO]: ::1 - - [05/Jun/2026:05:52:27 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 200 63 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:52:35 [INFO]: ::1 - - [05/Jun/2026:05:52:35 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:52:35 [INFO]: ::1 - - [05/Jun/2026:05:52:35 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:56:15 [INFO]: ::1 - - [05/Jun/2026:05:56:15 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:56:15 [INFO]: ::1 - - [05/Jun/2026:05:56:15 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:57:40 [INFO]: ::1 - - [05/Jun/2026:05:57:40 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 470 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 01:57:43 [INFO]: ::1 - - [05/Jun/2026:05:57:43 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 02:14:53 [INFO]: ::1 - - [05/Jun/2026:06:14:53 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 03:45:47 [INFO]: ::1 - - [05/Jun/2026:07:45:47 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 03:45:52 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-05 03:45:52 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-05 03:45:52 [INFO]: ::1 - - [05/Jun/2026:07:45:52 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 03:46:10 [ERROR]: 
+Invalid `prisma.job.findMany()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\job.controller.js:101:18
+
+   98 };
+   99 
+  100 const [jobs, total] = await Promise.all([
+→ 101   prisma.job.findMany(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.job.findMany()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\job.controller.js:101:18
+
+   98 };
+   99 
+  100 const [jobs, total] = await Promise.all([
+→ 101   prisma.job.findMany(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async Promise.all (index 0)
+    at async getMyJobs (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\job.controller.js:100:27)
+2026-06-05 03:46:10 [INFO]: ::1 - - [05/Jun/2026:07:46:10 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 500 483 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 06:57:26 [INFO]: ::1 - - [05/Jun/2026:10:57:26 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 06:57:29 [INFO]: ::1 - - [05/Jun/2026:10:57:29 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 06:57:39 [INFO]: ::1 - - [05/Jun/2026:10:57:39 +0000] "GET /api/v1/jobs?limit=50 HTTP/1.1" 200 107 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 06:58:10 [INFO]: ::1 - - [05/Jun/2026:10:58:10 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 06:58:27 [INFO]: ::1 - - [05/Jun/2026:10:58:27 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 468 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 06:58:39 [INFO]: ::1 - - [05/Jun/2026:10:58:39 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:00:29 [INFO]: ::1 - - [05/Jun/2026:11:00:29 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:00:43 [INFO]: OTP for 0593557524: 202361
+2026-06-05 07:00:43 [INFO]: ::1 - - [05/Jun/2026:11:00:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 316 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:01:13 [INFO]: ::1 - - [05/Jun/2026:11:01:13 +0000] "POST /api/v1/auth/verify-phone HTTP/1.1" 200 63 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:01:48 [INFO]: ::1 - - [05/Jun/2026:11:01:48 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 91 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:01:48 [INFO]: ::1 - - [05/Jun/2026:11:01:48 +0000] "POST /api/v1/auth/refresh-token HTTP/1.1" 401 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:02:30 [INFO]: ::1 - - [05/Jun/2026:11:02:30 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 465 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:02:33 [INFO]: ::1 - - [05/Jun/2026:11:02:33 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:02:34 [INFO]: ::1 - - [05/Jun/2026:11:02:34 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:03:07 [INFO]: ::1 - - [05/Jun/2026:11:03:07 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:03:10 [INFO]: ::1 - - [05/Jun/2026:11:03:10 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:03:46 [INFO]: ::1 - - [05/Jun/2026:11:03:46 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:10:11 [INFO]: ::1 - - [05/Jun/2026:11:10:11 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 465 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:10:13 [INFO]: ::1 - - [05/Jun/2026:11:10:13 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:10:15 [INFO]: ::1 - - [05/Jun/2026:11:10:15 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:12:34 [INFO]: ::1 - - [05/Jun/2026:11:12:34 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:12:37 [INFO]: ::1 - - [05/Jun/2026:11:12:37 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:12:53 [INFO]: ::1 - - [05/Jun/2026:11:12:53 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:14:20 [INFO]: ::1 - - [05/Jun/2026:11:14:20 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 473 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-05 07:14:23 [INFO]: ::1 - - [05/Jun/2026:11:14:23 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 713 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-05 07:14:48 [INFO]: ::1 - - [05/Jun/2026:11:14:48 +0000] "GET /api/v1/jobs?limit=50 HTTP/1.1" 200 714 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-05 07:18:46 [INFO]: ::1 - - [05/Jun/2026:11:18:46 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:18:52 [INFO]: ::1 - - [05/Jun/2026:11:18:52 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:18:53 [INFO]: ::1 - - [05/Jun/2026:11:18:53 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:19:00 [INFO]: ::1 - - [05/Jun/2026:11:19:00 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 07:19:03 [INFO]: ::1 - - [05/Jun/2026:11:19:03 +0000] "GET /api/v1/jobs/available HTTP/1.1" 403 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:41:49 [INFO]: ::1 - - [05/Jun/2026:12:41:49 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:41:49 [INFO]: ::1 - - [05/Jun/2026:12:41:49 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:41:52 [INFO]: ::1 - - [05/Jun/2026:12:41:52 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:41:52 [INFO]: ::1 - - [05/Jun/2026:12:41:52 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:41:54 [INFO]: ::1 - - [05/Jun/2026:12:41:54 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:41:55 [INFO]: ::1 - - [05/Jun/2026:12:41:55 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:42:01 [INFO]: ::1 - - [05/Jun/2026:12:42:01 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:42:01 [INFO]: ::1 - - [05/Jun/2026:12:42:01 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:47:18 [INFO]: ::1 - - [05/Jun/2026:12:47:18 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 08:47:18 [INFO]: ::1 - - [05/Jun/2026:12:47:18 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 09:08:21 [INFO]: ::1 - - [05/Jun/2026:13:08:21 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 09:08:21 [INFO]: ::1 - - [05/Jun/2026:13:08:21 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 09:08:46 [INFO]: ::1 - - [05/Jun/2026:13:08:46 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 09:08:46 [INFO]: ::1 - - [05/Jun/2026:13:08:46 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 09:08:53 [INFO]: ::1 - - [05/Jun/2026:13:08:53 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 09:08:54 [INFO]: ::1 - - [05/Jun/2026:13:08:54 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:07:13 [INFO]: ::1 - - [05/Jun/2026:16:07:13 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:07:13 [INFO]: ::1 - - [05/Jun/2026:16:07:13 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:07:16 [INFO]: ::1 - - [05/Jun/2026:16:07:16 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:07:16 [INFO]: ::1 - - [05/Jun/2026:16:07:16 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:07:19 [INFO]: ::1 - - [05/Jun/2026:16:07:19 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:07:20 [INFO]: ::1 - - [05/Jun/2026:16:07:20 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:13:25 [INFO]: ::1 - - [05/Jun/2026:16:13:25 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:13:25 [INFO]: ::1 - - [05/Jun/2026:16:13:25 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:19:27 [INFO]: ::1 - - [05/Jun/2026:16:19:27 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:19:27 [INFO]: ::1 - - [05/Jun/2026:16:19:27 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:26:20 [INFO]: ::1 - - [05/Jun/2026:16:26:20 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 12:26:20 [INFO]: ::1 - - [05/Jun/2026:16:26:20 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-05 13:05:48 [INFO]: Server running on port 5000 in development mode
+2026-06-05 13:05:48 [INFO]: Health check: http://localhost:5000/health
+2026-06-05 13:05:49 [INFO]: Database connected successfully
+2026-06-05 13:36:25 [INFO]: Server running on port 5000 in development mode
+2026-06-05 13:36:25 [INFO]: Health check: http://localhost:5000/health
+2026-06-05 13:36:30 [ERROR]: Database connection failed — retrying in 5 seconds...
+2026-06-05 13:36:37 [ERROR]: Database retry failed:
+2026-06-06 02:22:39 [INFO]: Server running on port 5000 in development mode
+2026-06-06 02:22:39 [INFO]: Health check: http://localhost:5000/health
+2026-06-06 02:22:41 [INFO]: Database connected successfully
+2026-06-06 02:23:34 [INFO]: ::1 - - [06/Jun/2026:06:23:34 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:23:35 [INFO]: ::1 - - [06/Jun/2026:06:23:35 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:41:08 [INFO]: ::1 - - [06/Jun/2026:06:41:08 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:41:08 [INFO]: ::1 - - [06/Jun/2026:06:41:08 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:53:18 [INFO]: ::1 - - [06/Jun/2026:06:53:18 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:53:18 [INFO]: ::1 - - [06/Jun/2026:06:53:18 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:53:22 [INFO]: ::1 - - [06/Jun/2026:06:53:22 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 02:53:22 [INFO]: ::1 - - [06/Jun/2026:06:53:22 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:03:48 [INFO]: ::1 - - [06/Jun/2026:07:03:48 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:03:49 [INFO]: ::1 - - [06/Jun/2026:07:03:49 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:03:56 [INFO]: ::1 - - [06/Jun/2026:07:03:56 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:03:56 [INFO]: ::1 - - [06/Jun/2026:07:03:56 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:04:00 [INFO]: ::1 - - [06/Jun/2026:07:04:00 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:04:00 [INFO]: ::1 - - [06/Jun/2026:07:04:00 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:07:51 [INFO]: ::1 - - [06/Jun/2026:07:07:51 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:08:20 [INFO]: ::1 - - [06/Jun/2026:07:08:20 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 465 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:08:22 [INFO]: ::1 - - [06/Jun/2026:07:08:22 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:08:23 [INFO]: ::1 - - [06/Jun/2026:07:08:23 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:08:36 [INFO]: ::1 - - [06/Jun/2026:07:08:36 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:11:25 [INFO]: ::1 - - [06/Jun/2026:07:11:25 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:11:25 [INFO]: ::1 - - [06/Jun/2026:07:11:25 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:15:54 [INFO]: ::1 - - [06/Jun/2026:07:15:54 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:15:55 [INFO]: ::1 - - [06/Jun/2026:07:15:55 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:19:42 [INFO]: ::1 - - [06/Jun/2026:07:19:42 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:20:15 [INFO]: ::1 - - [06/Jun/2026:07:20:15 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 465 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:20:33 [INFO]: ::1 - - [06/Jun/2026:07:20:33 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 468 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:20:36 [INFO]: ::1 - - [06/Jun/2026:07:20:36 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 106 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 03:21:58 [INFO]: ::1 - - [06/Jun/2026:07:21:58 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 03:21:58 [INFO]: ::1 - - [06/Jun/2026:07:21:58 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:31:26 [INFO]: ::1 - - [06/Jun/2026:08:31:26 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:31:26 [INFO]: ::1 - - [06/Jun/2026:08:31:26 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:38:59 [INFO]: ::1 - - [06/Jun/2026:08:38:59 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:38:59 [INFO]: ::1 - - [06/Jun/2026:08:38:59 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:39:01 [INFO]: ::1 - - [06/Jun/2026:08:39:01 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:39:01 [INFO]: ::1 - - [06/Jun/2026:08:39:01 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:57:13 [INFO]: ::1 - - [06/Jun/2026:08:57:13 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:57:13 [INFO]: ::1 - - [06/Jun/2026:08:57:13 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 04:57:32 [INFO]: ::1 - - [06/Jun/2026:08:57:32 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 10:49:47 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:47 [INFO]: ::1 - - [06/Jun/2026:14:49:47 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:47 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:47 [INFO]: ::1 - - [06/Jun/2026:14:49:47 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:47 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:47 [INFO]: ::1 - - [06/Jun/2026:14:49:47 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:47 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:47 [INFO]: ::1 - - [06/Jun/2026:14:49:47 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:48 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:48 [INFO]: ::1 - - [06/Jun/2026:14:49:48 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:48 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:48 [INFO]: ::1 - - [06/Jun/2026:14:49:48 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:56 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:56 [INFO]: ::1 - - [06/Jun/2026:14:49:56 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:56 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:56 [INFO]: ::1 - - [06/Jun/2026:14:49:56 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:57 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:57 [INFO]: ::1 - - [06/Jun/2026:14:49:57 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:49:57 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:49:57 [INFO]: ::1 - - [06/Jun/2026:14:49:57 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:50:00 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:50:00 [INFO]: ::1 - - [06/Jun/2026:14:50:00 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:50:00 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:50:00 [INFO]: ::1 - - [06/Jun/2026:14:50:00 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:50:03 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:50:03 [INFO]: ::1 - - [06/Jun/2026:14:50:03 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:50:03 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:50:03 [INFO]: ::1 - - [06/Jun/2026:14:50:03 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:52:27 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:52:27 [INFO]: ::1 - - [06/Jun/2026:14:52:27 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:52:27 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:52:27 [INFO]: ::1 - - [06/Jun/2026:14:52:27 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:52:32 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:52:32 [INFO]: ::1 - - [06/Jun/2026:14:52:32 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:52:32 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:52:32 [INFO]: ::1 - - [06/Jun/2026:14:52:32 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:52:34 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:52:34 [INFO]: ::1 - - [06/Jun/2026:14:52:34 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:52:34 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:52:34 [INFO]: ::1 - - [06/Jun/2026:14:52:34 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:53:57 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:53:57 [INFO]: ::1 - - [06/Jun/2026:14:53:57 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 10:53:57 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 10:53:57 [INFO]: ::1 - - [06/Jun/2026:14:53:57 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 11:04:40 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 11:04:40 [INFO]: ::1 - - [06/Jun/2026:15:04:40 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 11:04:40 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-06 11:04:40 [INFO]: ::1 - - [06/Jun/2026:15:04:40 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:28:40 [INFO]: Server running on port 5000 in development mode
+2026-06-06 21:28:40 [INFO]: Health check: http://localhost:5000/health
+2026-06-06 21:28:42 [INFO]: Database connected successfully
+2026-06-06 21:29:26 [INFO]: ::1 - - [07/Jun/2026:01:29:26 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:27 [INFO]: ::1 - - [07/Jun/2026:01:29:27 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:33 [INFO]: ::1 - - [07/Jun/2026:01:29:33 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:34 [INFO]: ::1 - - [07/Jun/2026:01:29:34 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:41 [INFO]: ::1 - - [07/Jun/2026:01:29:41 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:41 [INFO]: ::1 - - [07/Jun/2026:01:29:41 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:51 [INFO]: ::1 - - [07/Jun/2026:01:29:51 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 21:29:51 [INFO]: ::1 - - [07/Jun/2026:01:29:51 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:27 [INFO]: Server running on port 5000 in development mode
+2026-06-06 22:08:27 [INFO]: Health check: http://localhost:5000/health
+2026-06-06 22:08:29 [INFO]: Database connected successfully
+2026-06-06 22:08:34 [INFO]: ::1 - - [07/Jun/2026:02:08:34 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:34 [INFO]: ::1 - - [07/Jun/2026:02:08:34 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:38 [INFO]: ::1 - - [07/Jun/2026:02:08:38 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:39 [INFO]: ::1 - - [07/Jun/2026:02:08:39 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:40 [INFO]: ::1 - - [07/Jun/2026:02:08:40 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:47 [INFO]: ::1 - - [07/Jun/2026:02:08:47 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 468 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:08:49 [INFO]: ::1 - - [07/Jun/2026:02:08:49 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-06 22:11:50 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:36
+
+   98 try {
+   99   const { phone, password } = req.body;
+  100 
+→ 101   const user = await prisma.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5)
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:36
+
+   98 try {
+   99   const { phone, password } = req.body;
+  100 
+→ 101   const user = await prisma.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5)
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async login (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:18)
+2026-06-06 22:11:50 [INFO]: ::1 - - [07/Jun/2026:02:11:50 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 502 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 22:12:07 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:36
+
+   98 try {
+   99   const { phone, password } = req.body;
+  100 
+→ 101   const user = await prisma.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5)
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:36
+
+   98 try {
+   99   const { phone, password } = req.body;
+  100 
+→ 101   const user = await prisma.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5)
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async login (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:18)
+2026-06-06 22:12:07 [INFO]: ::1 - - [07/Jun/2026:02:12:07 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 502 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-06 22:12:38 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:36
+
+   98 try {
+   99   const { phone, password } = req.body;
+  100 
+→ 101   const user = await prisma.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5)
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:36
+
+   98 try {
+   99   const { phone, password } = req.body;
+  100 
+→ 101   const user = await prisma.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5)
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async login (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\controllers\auth.controller.js:101:18)
+2026-06-06 22:12:38 [INFO]: ::1 - - [07/Jun/2026:02:12:38 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 502 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 04:03:18 [INFO]: ::1 - - [07/Jun/2026:08:03:18 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 468 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 04:03:21 [INFO]: ::1 - - [07/Jun/2026:08:03:21 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 06:33:28 [INFO]: Server running on port 5000 in development mode
+2026-06-07 06:33:28 [INFO]: Health check: http://localhost:5000/health
+2026-06-07 06:33:30 [INFO]: Database connected successfully
+2026-06-07 06:36:38 [INFO]: Server running on port 5000 in development mode
+2026-06-07 06:36:38 [INFO]: Health check: http://localhost:5000/health
+2026-06-07 06:36:40 [INFO]: Database connected successfully
+2026-06-07 06:41:35 [INFO]: New job created: 216d3d68-ad15-40c0-938d-4abc1df86853 by customer bc75a8e5-007d-4a5f-aae2-cdf1328ebf73
+2026-06-07 06:41:35 [INFO]: ::1 - - [07/Jun/2026:10:41:35 +0000] "POST /api/v1/jobs HTTP/1.1" 201 824 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 06:41:39 [INFO]: ::1 - - [07/Jun/2026:10:41:39 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 200 796 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 06:41:49 [INFO]: ::1 - - [07/Jun/2026:10:41:49 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:41:55 [INFO]: ::1 - - [07/Jun/2026:10:41:55 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 465 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:41:58 [INFO]: ::1 - - [07/Jun/2026:10:41:58 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:41:59 [INFO]: ::1 - - [07/Jun/2026:10:41:59 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:42:03 [INFO]: ::1 - - [07/Jun/2026:10:42:03 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:42:04 [INFO]: ::1 - - [07/Jun/2026:10:42:04 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:42:13 [INFO]: ::1 - - [07/Jun/2026:10:42:13 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:42:14 [INFO]: ::1 - - [07/Jun/2026:10:42:14 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:43:06 [INFO]: ::1 - - [07/Jun/2026:10:43:06 +0000] "GET /api/v1/jobs?limit=50 HTTP/1.1" 200 797 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 06:47:17 [INFO]: ::1 - - [07/Jun/2026:10:47:17 +0000] "GET /api/v1/jobs?limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+2026-06-07 06:52:40 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 06:52:40 [INFO]: ::1 - - [07/Jun/2026:10:52:40 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:52:40 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 06:52:40 [INFO]: ::1 - - [07/Jun/2026:10:52:40 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 500 516 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:52:49 [INFO]: ::1 - - [07/Jun/2026:10:52:49 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 06:52:50 [INFO]: ::1 - - [07/Jun/2026:10:52:50 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 08:09:03 [INFO]: ::1 - - [07/Jun/2026:12:09:03 +0000] "GET /api/v1/drivers/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 08:09:03 [INFO]: ::1 - - [07/Jun/2026:12:09:03 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 08:09:07 [INFO]: ::1 - - [07/Jun/2026:12:09:07 +0000] "GET /api/v1/drivers/profile HTTP/1.1" 200 583 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+2026-06-07 08:09:07 [INFO]: ::1 - - [07/Jun/2026:12:09:07 +0000] "GET /api/v1/drivers/earnings HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
