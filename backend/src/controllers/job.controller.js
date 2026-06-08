@@ -1,3 +1,4 @@
+const { createNotification } = require('../services/notification.service');
 const prisma = require('../config/database');
 const { successResponse, errorResponse } = require('../utils/apiResponse');
 const logger = require('../utils/logger');
@@ -77,6 +78,15 @@ const createJob = async (req, res, next) => {
     });
 
     logger.info(`New job created: ${job.id} by customer ${req.user.id}`);
+
+    // Notify customer
+await createNotification(
+  job.customerId,
+  'JOB_ASSIGNED',
+  'Driver found! 🚗',
+  `Your driver is on the way to pick you up.`,
+  { jobId: job.id }
+);
 
     return successResponse(res, 'Job created successfully', job, 201);
   } catch (error) {
@@ -368,6 +378,15 @@ const completeJob = async (req, res, next) => {
     ]);
 
     logger.info(`Job ${job.id} completed by driver ${driver.id}`);
+
+    // Notify customer
+await createNotification(
+  job.customerId,
+  'TRIP_COMPLETED',
+  'Trip completed! ✅',
+  `Your trip has been completed. Total: GHS ${job.estimatedPrice}`,
+  { jobId: job.id }
+);
 
     return successResponse(res, 'Trip completed successfully', updatedJob);
   } catch (error) {

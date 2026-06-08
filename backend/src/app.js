@@ -10,7 +10,8 @@ const logger = require('./utils/logger');
 
 // Routes
 const authRoutes = require('./routes/auth.routes');
-
+const notificationRoutes = require('./routes/notification.routes');
+app.use('/api/v1/notifications', notificationRoutes);
 const app = express();
 
 // Security middleware
