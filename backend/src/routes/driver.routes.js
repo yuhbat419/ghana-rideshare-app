@@ -8,7 +8,6 @@ const {
   addVehicleValidator,
 } = require('../validators/driver.validator');
 
-// All driver routes require authentication and DRIVER role
 router.use(authenticate);
 router.use(authorize('DRIVER'));
 
@@ -19,5 +18,6 @@ router.post('/vehicles', addVehicleValidator, validate, driverController.addVehi
 router.put('/toggle-online', driverController.toggleOnline);
 router.put('/location', driverController.updateLocation);
 router.get('/earnings', driverController.getEarnings);
+router.get('/active-job', driverController.getActiveJob);
 
 module.exports = router;

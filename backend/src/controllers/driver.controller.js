@@ -267,6 +267,37 @@ const getEarnings = async (req, res, next) => {
     next(error);
   }
 };
+const getActiveJob = async (req, res, next) => {
+  try {
+    const driver = await prisma.driver.findUnique({
+      where: { userId: req.user.id },
+    });
+
+    if (!driver) {
+      return errorResponse(res, 'Driver not found', 404, null, 'DRIVER_NOT_FOUND');
+    }
+
+    const activeJob = await prisma.job.findFirst({
+      where: {
+        driverId: driver.id,
+        status: { in: ['ASSIGNED', 'IN_PROGRESS'] },
+      },
+      include: {
+        customer: {
+          select: {
+            firstName: true,
+            lastName: true,
+            phone: true,
+          },
+        },
+      },
+    });
+
+    return successResponse(res, 'Active job retrieved', activeJob);
+  } catch (error) {
+    next(error);
+  }
+};
 
 module.exports = {
   getProfile,
@@ -276,4 +307,5 @@ module.exports = {
   toggleOnline,
   updateLocation,
   getEarnings,
+  getActiveJob
 };

@@ -986,3 +986,273 @@ Please make sure your database server is running at `aws-0-eu-west-1.pooler.supa
     at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
     at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
     at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 13:21:53 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 13:23:32 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 13:23:33 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:00:20 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:00:21 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:00:22 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:19:52 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:19:58 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:27:15 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
+2026-06-07 14:27:16 [ERROR]: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:36
+
+  14 
+  15 const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  16 
+→ 17 const user = await prisma.user.findUnique(
+Can't reach database server at `aws-0-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async authenticate (C:\Users\ROCKSON\source\repos\ghana-rideshare-app\backend\src\middleware\auth.middleware.js:17:18)
