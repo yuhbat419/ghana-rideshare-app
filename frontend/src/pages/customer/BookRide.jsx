@@ -211,7 +211,7 @@ const [locationLoading, setLocationLoading] = useState(true);
         notes,
       });
       toast.success(`🚗 Ride booked! Price: GHS ${response.data.data.estimatedPrice}`);
-      navigate('/customer/dashboard');
+navigate(`/customer/trip/${response.data.data.id}`);
     } catch (error) {
       toast.error(error.response?.data?.message || 'Booking failed');
     } finally {

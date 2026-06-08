@@ -104,7 +104,11 @@ const CustomerDashboard = () => {
           ) : (
             <div className="space-y-3">
               {jobs.map((job) => (
-                <div key={job.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                <div
+  key={job.id}
+  className="flex items-center justify-between p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors"
+  onClick={() => navigate(`/customer/trip/${job.id}`)}
+>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mt-1">
                       <MapPin className="w-4 h-4 text-primary-600" />

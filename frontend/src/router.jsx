@@ -1,3 +1,4 @@
+import TripStatus from './pages/customer/TripStatus';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import useAuthStore from './store/authStore';
 import Home from './pages/Home';
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
   { path: '/customer/dashboard', element: <ProtectedRoute allowedRoles={['CUSTOMER']}><CustomerDashboard /></ProtectedRoute> },
   { path: '/customer/book', element: <ProtectedRoute allowedRoles={['CUSTOMER']}><BookRide /></ProtectedRoute> },
   { path: '/customer/history', element: <ProtectedRoute allowedRoles={['CUSTOMER']}><CustomerHistory /></ProtectedRoute> },
+  { path: '/customer/trip/:jobId', element: <ProtectedRoute allowedRoles={['CUSTOMER']}><TripStatus /></ProtectedRoute> },
   { path: '/driver/dashboard', element: <ProtectedRoute allowedRoles={['DRIVER']}><DriverDashboard /></ProtectedRoute> },
   { path: '/driver/jobs', element: <ProtectedRoute allowedRoles={['DRIVER']}><DriverJobs /></ProtectedRoute> },
   { path: '/driver/earnings', element: <ProtectedRoute allowedRoles={['DRIVER']}><DriverEarnings /></ProtectedRoute> },
