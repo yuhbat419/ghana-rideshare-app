@@ -17,3 +17,5 @@ router.post('/logout', authController.logout);
 router.get('/me', authenticate, authController.getMe);
 
 module.exports = router;
+router.put('/profile', authenticate, authController.updateProfile);
+router.put('/change-password', authenticate, authController.changePassword);

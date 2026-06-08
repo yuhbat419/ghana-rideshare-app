@@ -236,5 +236,66 @@ const logout = (req, res) => {
   res.clearCookie('refreshToken');
   return successResponse(res, 'Logged out successfully');
 };
+const updateProfile = async (req, res, next) => {
+  try {
+    const { firstName, lastName, email } = req.body;
 
-module.exports = { register, login, verifyPhone, refreshToken, getMe, logout };
+    if (email) {
+      const existing = await prisma.user.findFirst({
+        where: { email, id: { not: req.user.id } },
+      });
+      if (existing) {
+        return errorResponse(res, 'Email already in use', 409, null, 'EMAIL_EXISTS');
+      }
+    }
+
+    const user = await prisma.user.update({
+      where: { id: req.user.id },
+      data: {
+        ...(firstName && { firstName }),
+        ...(lastName && { lastName }),
+        ...(email !== undefined && { email: email || null }),
+      },
+      select: {
+        id: true,
+        firstName: true,
+        lastName: true,
+        phone: true,
+        email: true,
+        role: true,
+        isVerified: true,
+      },
+    });
+
+    return successResponse(res, 'Profile updated successfully', user);
+  } catch (error) {
+    next(error);
+  }
+};
+
+const changePassword = async (req, res, next) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+
+    const user = await prisma.user.findUnique({
+      where: { id: req.user.id },
+    });
+
+    const isValid = await bcrypt.compare(currentPassword, user.password);
+    if (!isValid) {
+      return errorResponse(res, 'Current password is incorrect', 400, null, 'WRONG_PASSWORD');
+    }
+
+    const hashedPassword = await bcrypt.hash(newPassword, 12);
+
+    await prisma.user.update({
+      where: { id: req.user.id },
+      data: { password: hashedPassword },
+    });
+
+    return successResponse(res, 'Password changed successfully');
+  } catch (error) {
+    next(error);
+  }
+};
+module.exports = { register, login, verifyPhone, refreshToken, getMe, logout, updateProfile, changePassword };
