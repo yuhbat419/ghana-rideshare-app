@@ -14,6 +14,7 @@ import DriverEarnings from './pages/driver/Earnings';
 import AdminDashboard from './pages/admin/Dashboard';
 import AdminDrivers from './pages/admin/Drivers';
 import Profile from './pages/Profile';
+import Notifications from './pages/Notifications';
 
 const ProtectedRoute = ({ children, allowedRoles }) => {
   const { isAuthenticated, user } = useAuthStore();
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
   { path: '/admin/drivers', element: <ProtectedRoute allowedRoles={['ADMIN']}><AdminDrivers /></ProtectedRoute> },
   { path: '*', element: <Navigate to="/" replace /> },
   { path: '/profile', element: <ProtectedRoute allowedRoles={['CUSTOMER', 'DRIVER', 'ADMIN']}><Profile /></ProtectedRoute> },
+  { path: '/notifications', element: <ProtectedRoute allowedRoles={['CUSTOMER', 'DRIVER', 'ADMIN']}><Notifications /></ProtectedRoute> },
 ]);
 
 export default router;

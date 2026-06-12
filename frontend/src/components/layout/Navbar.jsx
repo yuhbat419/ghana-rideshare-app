@@ -1,12 +1,22 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Car, LogOut, Bell, User } from 'lucide-react';
+import { Car, LogOut, Bell } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import useAuthStore from '../../store/authStore';
 import { authAPI } from '../../api/auth.api';
+import apiClient from '../../api/client';
 
 const Navbar = () => {
   const { user, logout } = useAuthStore();
   const navigate = useNavigate();
+
+  const { data: notifData } = useQuery({
+    queryKey: ['unreadCount'],
+    queryFn: () => apiClient.get('/notifications/unread-count'),
+    refetchInterval: 30000,
+  });
+
+  const unreadCount = notifData?.data?.data?.count || 0;
 
   const handleLogout = async () => {
     try {
@@ -42,8 +52,16 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
 
           {/* Notifications */}
-          <button className="relative p-2 text-gray-500 hover:text-gray-700">
+          <button
+            onClick={() => navigate('/notifications')}
+            className="relative p-2 text-gray-500 hover:text-gray-700"
+          >
             <Bell className="w-5 h-5" />
+            {unreadCount > 0 && (
+              <span className="absolute top-1 right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold">
+                {unreadCount > 9 ? '9+' : unreadCount}
+              </span>
+            )}
           </button>
 
           {/* Profile */}

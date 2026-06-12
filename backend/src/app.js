@@ -10,14 +10,17 @@ const logger = require('./utils/logger');
 
 // Routes
 const authRoutes = require('./routes/auth.routes');
+const driverRoutes = require('./routes/driver.routes');
+const jobRoutes = require('./routes/job.routes');
+const adminRoutes = require('./routes/admin.routes');
 const notificationRoutes = require('./routes/notification.routes');
-app.use('/api/v1/notifications', notificationRoutes);
+
 const app = express();
 
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS?.split(',') || 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://ghana-rideshare-app.vercel.app'],
   credentials: true,
 }));
 
@@ -33,7 +36,7 @@ app.use(morgan('combined', {
   stream: { write: (message) => logger.info(message.trim()) },
 }));
 
-// Health check route
+// Health check
 app.get('/health', (req, res) => {
   res.status(200).json({
     success: true,
@@ -45,15 +48,10 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/v1/auth', authRoutes);
-
-// More routes will be added here as we build:
-const driverRoutes = require('./routes/driver.routes');
-app.use('/api/v1/drivers', driverRoutes);// app.use('/api/v1/customers', customerRoutes);
-const jobRoutes = require('./routes/job.routes');
+app.use('/api/v1/drivers', driverRoutes);
 app.use('/api/v1/jobs', jobRoutes);
-const adminRoutes = require('./routes/admin.routes');
 app.use('/api/v1/admin', adminRoutes);
-// app.use('/api/v1/payments', paymentRoutes);
+app.use('/api/v1/notifications', notificationRoutes);
 
 // Handle unknown routes
 app.use('*splat', (req, res) => {
