@@ -24,7 +24,7 @@ router.post('/initialize', async (req, res, next) => {
       return errorResponse(res, 'Access denied', 403, null, 'FORBIDDEN');
     }
 
-    const reference = `RIDE-${uuidv4().slice(0, 12).toUpperCase()}`;
+    const reference = `RIDE-${Date.now()}-${uuidv4().slice(0, 8).toUpperCase()}`;
     const amount = job.finalPrice || job.estimatedPrice;
 
     const paystackResponse = await initializeTransaction({
