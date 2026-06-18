@@ -14,6 +14,7 @@ const driverRoutes = require('./routes/driver.routes');
 const jobRoutes = require('./routes/job.routes');
 const adminRoutes = require('./routes/admin.routes');
 const notificationRoutes = require('./routes/notification.routes');
+const paymentRoutes = require('./routes/payment.routes');
 
 const app = express();
 
@@ -52,6 +53,7 @@ app.use('/api/v1/drivers', driverRoutes);
 app.use('/api/v1/jobs', jobRoutes);
 app.use('/api/v1/admin', adminRoutes);
 app.use('/api/v1/notifications', notificationRoutes);
+app.use('/api/v1/payments', paymentRoutes);
 
 // Handle unknown routes
 app.use('*splat', (req, res) => {

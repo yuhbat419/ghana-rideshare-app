@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { MapPin, Phone, Star, CheckCircle, XCircle, Clock } from 'lucide-react';
+import { Phone, Star, CheckCircle, XCircle, Clock, CreditCard, MapPin } from 'lucide-react';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import Navbar from '../../components/layout/Navbar';
@@ -48,8 +48,42 @@ const TripStatus = () => {
     onError: (error) => toast.error(error.response?.data?.message || 'Rating failed'),
   });
 
+  const payMutation = useMutation({
+    mutationFn: () => apiClient.post('/payments/initialize', { jobId }),
+    onSuccess: (res) => {
+      const { reference } = res.data.data;
+      const amount = Math.round(parseFloat(job.finalPrice || job.estimatedPrice) * 100);
+      const key = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY;
+      console.log('Paystack key:', key);
+      if (!key) {
+        toast.error('Payment key not configured');
+        return;
+      }
+      const handler = window.PaystackPop.setup({
+        key: key,
+        email: 'customer@rideshare.com',
+        amount: amount,
+        currency: 'GHS',
+        ref: reference,
+        callback: (response) => {
+          apiClient.get(`/payments/verify/${response.reference}`).then(() => {
+            toast.success('Payment successful!');
+            refetch();
+          });
+        },
+        onClose: () => {
+          toast.error('Payment window closed');
+        },
+      });
+      handler.openIframe();
+    },
+    onError: (error) => {
+      toast.error(error.response?.data?.message || 'Payment failed');
+    },
+  });
+
   const getStatusInfo = (status) => {
-    const info = {
+    const map = {
       PENDING: {
         color: 'text-yellow-600',
         bg: 'bg-yellow-50',
@@ -70,7 +104,7 @@ const TripStatus = () => {
         color: 'text-primary-600',
         bg: 'bg-primary-50',
         border: 'border-primary-200',
-        icon: <div className="text-3xl">🚗</div>,
+        icon: <span className="text-3xl">🚗</span>,
         title: 'Trip in progress',
         desc: 'You are on your way to your destination',
       },
@@ -91,7 +125,7 @@ const TripStatus = () => {
         desc: 'This trip was cancelled',
       },
     };
-    return info[status] || info.PENDING;
+    return map[status] || map.PENDING;
   };
 
   if (!job) {
@@ -112,39 +146,29 @@ const TripStatus = () => {
       <Navbar />
       <div className="max-w-lg mx-auto px-4 py-8">
 
-        {/* Status Card */}
         <div className={`card mb-4 border-2 ${statusInfo.border} ${statusInfo.bg}`}>
           <div className="text-center mb-4">
             <div className="flex justify-center mb-3">{statusInfo.icon}</div>
             <h2 className={`text-xl font-bold ${statusInfo.color}`}>{statusInfo.title}</h2>
             <p className="text-gray-600 text-sm mt-1">{statusInfo.desc}</p>
           </div>
-
-          {/* Progress Steps */}
-          <div className="flex items-center justify-between mb-6 px-4">
-            {['PENDING', 'ASSIGNED', 'IN_PROGRESS', 'COMPLETED'].map((step, index) => {
+          <div className="flex items-center justify-between px-4">
+            {['Finding', 'Driver coming', 'In ride', 'Done'].map((label, index) => {
               const steps = ['PENDING', 'ASSIGNED', 'IN_PROGRESS', 'COMPLETED'];
               const currentIndex = steps.indexOf(job.status);
               const isCompleted = index <= currentIndex;
-              const labels = ['Finding', 'Driver coming', 'In ride', 'Done'];
               return (
-                <div key={step} className="flex flex-col items-center flex-1">
-                  <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                    isCompleted ? 'bg-primary-600 text-white' : 'bg-gray-200 text-gray-400'
-                  }`}>
+                <div key={label} className="flex flex-col items-center flex-1">
+                  <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${isCompleted ? 'bg-primary-600 text-white' : 'bg-gray-200 text-gray-400'}`}>
                     {index + 1}
                   </div>
-                  <span className="text-xs text-gray-500 mt-1 text-center">{labels[index]}</span>
-                  {index < 3 && (
-                    <div className={`absolute h-0.5 w-full ${isCompleted ? 'bg-primary-600' : 'bg-gray-200'}`} />
-                  )}
+                  <span className="text-xs text-gray-500 mt-1 text-center">{label}</span>
                 </div>
               );
             })}
           </div>
         </div>
 
-        {/* Trip Details */}
         <div className="card mb-4">
           <h3 className="font-semibold text-gray-900 mb-3">Trip Details</h3>
           <div className="space-y-3">
@@ -176,34 +200,41 @@ const TripStatus = () => {
                 <span className="text-lg font-bold text-green-700">GHS {job.finalPrice}</span>
               </div>
             )}
+            {job.status === 'COMPLETED' && job.transaction?.status !== 'SUCCESS' && (
+              <button
+                onClick={() => payMutation.mutate()}
+                disabled={payMutation.isPending}
+                className="flex items-center justify-center gap-2 w-full mt-3 bg-green-600 text-white py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
+              >
+                <CreditCard className="w-4 h-4" />
+                {payMutation.isPending ? 'Loading...' : 'Pay with Mobile Money / Card'}
+              </button>
+            )}
+            {job.transaction?.status === 'SUCCESS' && (
+              <div className="text-center text-sm text-green-600 font-medium mt-2 p-2 bg-green-50 rounded-lg">
+                ✅ Payment completed
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Driver Info */}
         {job.driver && (
           <div className="card mb-4">
             <h3 className="font-semibold text-gray-900 mb-3">Your Driver</h3>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-700 font-bold text-lg">
-                    {job.driver.user?.firstName?.[0]}
-                  </span>
+                  <span className="text-primary-700 font-bold text-lg">{job.driver.user?.firstName?.[0]}</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">
-                    {job.driver.user?.firstName} {job.driver.user?.lastName}
-                  </p>
+                  <p className="font-semibold text-gray-900">{job.driver.user?.firstName} {job.driver.user?.lastName}</p>
                   <div className="flex items-center gap-1">
                     <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
                     <span className="text-xs text-gray-500">{job.driver.avgRating || '0.0'}</span>
                   </div>
                 </div>
               </div>
-              <a
-                href={`tel:${job.driver.user?.phone}`}
-                className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700"
-              >
+              <a href={`tel:${job.driver.user?.phone}`} className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700">
                 <Phone className="w-4 h-4" />
                 Call
               </a>
@@ -211,15 +242,12 @@ const TripStatus = () => {
             {job.vehicle && (
               <div className="mt-3 pt-3 border-t border-gray-100 flex justify-between text-sm">
                 <span className="text-gray-500">Vehicle</span>
-                <span className="font-medium">
-                  {job.vehicle.color} {job.vehicle.make} {job.vehicle.model} — {job.vehicle.plateNumber}
-                </span>
+                <span className="font-medium">{job.vehicle.color} {job.vehicle.make} {job.vehicle.model} - {job.vehicle.plateNumber}</span>
               </div>
             )}
           </div>
         )}
 
-        {/* Cancel Button */}
         {['PENDING', 'ASSIGNED'].includes(job.status) && (
           <button
             onClick={() => cancelMutation.mutate()}
@@ -230,18 +258,13 @@ const TripStatus = () => {
           </button>
         )}
 
-        {/* Rating Modal */}
         {showRating && (
-          <div className="card border-2 border-yellow-200 bg-yellow-50">
+          <div className="card border-2 border-yellow-200 bg-yellow-50 mb-4">
             <h3 className="font-semibold text-gray-900 mb-1">Rate your trip</h3>
             <p className="text-sm text-gray-600 mb-4">How was your experience with {job.driver?.user?.firstName}?</p>
             <div className="flex gap-2 mb-4 justify-center">
               {[1, 2, 3, 4, 5].map((star) => (
-                <button
-                  key={star}
-                  onClick={() => setRating(star)}
-                  className="text-3xl transition-transform hover:scale-110"
-                >
+                <button key={star} onClick={() => setRating(star)} className="transition-transform hover:scale-110">
                   <Star className={`w-8 h-8 ${star <= rating ? 'text-yellow-500 fill-yellow-500' : 'text-gray-300'}`} />
                 </button>
               ))}
@@ -269,10 +292,7 @@ const TripStatus = () => {
           </div>
         )}
 
-        <button
-          onClick={() => navigate('/customer/dashboard')}
-          className="btn-secondary w-full mt-2"
-        >
+        <button onClick={() => navigate('/customer/dashboard')} className="btn-secondary w-full">
           Back to Dashboard
         </button>
       </div>

@@ -363,18 +363,17 @@ const completeJob = async (req, res, next) => {
         where: { id: driver.id },
         data: { totalTrips: { increment: 1 } },
       }),
-      prisma.transaction.create({
-        data: {
-          jobId: job.id,
-          customerId: job.customerId,
-          amount: job.estimatedPrice,
-          method: 'CASH',
-          status: 'SUCCESS',
-          platformFee: (parseFloat(job.estimatedPrice) * 0.15).toFixed(2),
-          driverPayout: (parseFloat(job.estimatedPrice) * 0.85).toFixed(2),
-          paidAt: new Date(),
-        },
-      }),
+     prisma.transaction.create({
+  data: {
+    jobId: job.id,
+    customerId: job.customerId,
+    amount: job.estimatedPrice,
+    method: 'CASH',
+    status: 'PENDING',
+    platformFee: (parseFloat(job.estimatedPrice) * 0.15).toFixed(2),
+    driverPayout: (parseFloat(job.estimatedPrice) * 0.85).toFixed(2),
+  },
+}),
     ]);
 
     logger.info(`Job ${job.id} completed by driver ${driver.id}`);
