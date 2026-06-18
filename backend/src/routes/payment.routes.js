@@ -8,7 +8,6 @@ const { v4: uuidv4 } = require('uuid');
 
 router.use(authenticate);
 
-// Initialize payment for a job
 router.post('/initialize', async (req, res, next) => {
   try {
     const { jobId } = req.body;
@@ -38,36 +37,34 @@ router.post('/initialize', async (req, res, next) => {
       },
     });
 
-   // Create or update transaction record
-const existingTransaction = await prisma.transaction.findUnique({
-  where: { jobId: job.id },
-});
-
-if (existingTransaction) {
-  await prisma.transaction.update({
-    where: { jobId: job.id },
-    data: {
-      paystackRef: reference,
-      amount,
-      method: 'MOBILE_MONEY',
-      status: 'PENDING',
-    },
-  });
-} else {
-  await prisma.transaction.create({
-    data: {
-      jobId: job.id,
-      customerId: req.user.id,
-      amount,
-      method: 'MOBILE_MONEY',
-      status: 'PENDING',
-      paystackRef: reference,
-      platformFee: (parseFloat(amount) * 0.15).toFixed(2),
-      driverPayout: (parseFloat(amount) * 0.85).toFixed(2),
-    },
-  });
-}
+    const existingTransaction = await prisma.transaction.findUnique({
+      where: { jobId: job.id },
     });
+
+    if (existingTransaction) {
+      await prisma.transaction.update({
+        where: { jobId: job.id },
+        data: {
+          paystackRef: reference,
+          amount,
+          method: 'MOBILE_MONEY',
+          status: 'PENDING',
+        },
+      });
+    } else {
+      await prisma.transaction.create({
+        data: {
+          jobId: job.id,
+          customerId: req.user.id,
+          amount,
+          method: 'MOBILE_MONEY',
+          status: 'PENDING',
+          paystackRef: reference,
+          platformFee: (parseFloat(amount) * 0.15).toFixed(2),
+          driverPayout: (parseFloat(amount) * 0.85).toFixed(2),
+        },
+      });
+    }
 
     return successResponse(res, 'Payment initialized', {
       authorizationUrl: paystackResponse.data.authorization_url,
@@ -79,7 +76,6 @@ if (existingTransaction) {
   }
 });
 
-// Verify payment
 router.get('/verify/:reference', async (req, res, next) => {
   try {
     const { reference } = req.params;
