@@ -20,9 +20,9 @@ router.post('/initialize', async (req, res, next) => {
       return errorResponse(res, 'Job not found', 404, null, 'JOB_NOT_FOUND');
     }
 
-    if (job.customerId !== req.user.id) {
-      return errorResponse(res, 'Access denied', 403, null, 'FORBIDDEN');
-    }
+   if (job.customerId !== req.user.id) {
+  return errorResponse(res, 'You can only pay for your own trips', 403, null, 'FORBIDDEN');
+}
 
     const reference = `RIDE-${Date.now()}-${uuidv4().slice(0, 8).toUpperCase()}`;
     const amount = job.finalPrice || job.estimatedPrice;
